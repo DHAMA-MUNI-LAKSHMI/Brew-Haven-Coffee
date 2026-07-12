@@ -1,0 +1,147 @@
+/* import google font-family */
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scrollbar-width: none;
+}
+#nav_bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+p{
+    font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* #home_page{
+    height: 92vh;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+} */
+.home_head{
+    font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* #about_page{
+    height: 80vh;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+} */
+.about_img{
+    border-radius:50% ;
+}
+
+#about_page i:hover{
+ color: brown;
+}
+#testinomials_page{
+    font-size: 16px;
+}
+#testinomials_page img{
+    border-radius: 50%;
+}
+#galary_page div{
+    overflow: hidden;
+    border-radius: 20px;
+}
+#galary_page img{
+    border-radius: 20px;
+    transition: 1s linear;
+}
+#galary_page img:hover{
+    scale: 1.2;
+}
+#contact_page{
+    height: 90vh;
+    padding-top: 150px;
+}
+#contact_page p,input {
+    font-size: 14px;
+}
+
+#contact_page input::placeholder,
+#contact_page textarea::placeholder{
+    font-size: 12px;
+}
+nav img{
+    animation: coffee 2s linear infinite; 
+}
+
+@keyframes coffee{
+    0%{
+        transform: rotateY(0deg);
+        scale: 1;
+    }
+    50%{
+        transform: rotateY(180deg);
+        scale: 1.2;
+    }
+    100%{
+        transform: rotateY(360deg);
+        scale: 1.5;
+    }
+}
+
+#home_page img{
+    animation: home_img 2s ease-out; 
+}
+
+@keyframes home_img{
+    0%{
+        
+        scale: 0.5;
+    }
+    50%{
+        
+        scale: 0.8;
+    }
+    100%{
+        
+        scale: 1;
+    }
+}
+
+#menu_page img{
+    animation: menu_img 3s linear infinite; 
+    transition: 1s linear;
+}
+#menu_page img:hover{
+   scale: 1.2;
+}
+@keyframes menu_img{
+    0%{
+        transform:translateY(-20px) ;
+        
+    }
+    20%{
+        transform: translateY(-10px);
+        
+    }
+    40%{
+        transform: translateY(0px);
+        
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
