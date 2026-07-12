@@ -10,46 +10,81 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    
-  <nav class="navbar navbar-expand-lg navbar-light bg-danger text-white" id="nav_bar">
-  <div class="container-fluid">
-    <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">
-      <img src="./images/hot-beverages.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Coffee
-    </a>
-  </div>
-    <a class="navbar-brand text-white" href="#home_page">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active text-white" aria-current="page" href="#about_page">About</a>
-        <a class="nav-link active text-white" aria-current="page" href="#menu_page">Menu</a>
-        <a class="nav-link active text-white" aria-current="page" href="#testinomials_page">Testinomials</a>
-        <a class="nav-link active text-white" aria-current="page" href="#galary_page">Gallery</a>
-        <a class="nav-link active text-white" aria-current="page" href="#contact_page">Contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger fixed-top">
 
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./images/hot-beverages.png"
+                 alt="coffe_img"
+                 width="50"
+                 class="me-2">
+            Coffee
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-end"
+             id="navbarNav">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home_page">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about_page">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu_page">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#testinomials_page">Testimonials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#galary_page">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact_page">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
 <main>
     <!-- HOME SECTION -->
     <section id="home_page">
-  <div class="row bg-success bg-danger mt-5 p-5">
-    <div class="col mt-5">
-      <h1 class="mt-5 text-warning home_head">Best Coffee</h1>
-      <h3 class="text-white py-2">Make your day greate with our special coffee!</h3>
-      <p class="text-white py-3">Welecome to our coffee paradise where every bean tells a 
+  <div class="row bg-danger mt-5 py-5 px-3">
+    <div class="col-12 col-md-6 mt-5 order-2 order-md-1">
+      <h1 class="mt-5 px-5 text-warning home_head">Best Coffee</h1>
+      <h3 class="text-white py-2 px-5">Make your day greate with our special coffee!</h3>
+      <p class="text-white py-3 px-5">Welecome to our coffee paradise where every bean tells a 
         story and every cup sparks joy.
       </p>
-      <button class="btn btn-lg bg-warning btn-outline-dark rounded-5">Order Now</button>
-      <button class="btn btn-lg btn-outline-dark bg-success">Contact Us</button>
+      <button class="btn p-2 ms-5 px-md-4 btn-sm bg-warning btn-outline-dark rounded-5 mb-0 mb-xs-3 mb-md-0">Order Now</button>
+      <button class="btn p-2  px-md-4 btn-sm btn-outline-dark bg-success">Contact Us</button>
     </div>
-    <div class="col">
-      <img src="./images/coffee-hero-section.png" alt="coffee_img" height="500" width="400">
+    <div class="col-12 col-md-6 order-1 order-md-2">
+      <img src="./images/coffee-hero-section.png"  alt="coffee_img" class="img-fluid" >
     </div>
   </div>
 </section>
@@ -57,12 +92,12 @@
 <!-- ABOUT SECTION -->
 
 <section id="about_page">
-    <div class="row">
-        <div class="col text-center">
-            <img src="./images/about-image.jpg" class="m-5 about_img "  alt="about_img" height="350" width="300">
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 py-3 text-center order-2 order-md-1">
+            <img src="./images/about-image.jpg" class="mx-2 my-5 about_img"  alt="about_img" height="350" width="300">
 
         </div>
-        <div class="col  mt-5 px-5 d-flex flex-column justify-content-start align-items-center">
+        <div class="col-12 col-md-6 order-1 order-md-2  mt-5 px-5 d-flex flex-column justify-content-start align-items-center">
             <h2 class="mt-2"><ins>ABOUT US</ins></h2>
 
             <p class="my-5 text-center">At Coffee House in Berndof, Germany, we pride ourselves on being a 
@@ -83,7 +118,7 @@
 <!-- MENU SECTION -->
 
 <section id="menu_page">
-    <div class="row bg-dark py-5 text-white">
+    <div class="row bg-dark py-5 text-white mt-3">
         <div class="col-12 col-xm-12 text-center">
             <h2><ins>OUR MENU</ins></h2>
         </div>
@@ -126,7 +161,7 @@
 <section id="testinomials_page">
 
 <div class="row bg-secondary text-white p-5">
-    <div class="col-12">
+    <div class="col-12 pt-4">
         <h2 class="text-center"><ins>TESTINOMIALS</ins></h2>
     </div>
 
@@ -226,7 +261,7 @@
 <!-- GALARY SECTION -->
 
 <section id="galary_page">
-    <div class="container text-center my-5">
+    <div class="container text-center my-5 pt-5">
         <div class="row">
             <div class="col-12 mb-3">
                 <h2 class="text-center"><ins>GALLARY</ins></h2>
@@ -260,8 +295,8 @@
     <!-- CONTACT PAGE -->
 
     <section id="contact_page">
-        <div class="container m-5">
-            <div class="row">
+        <div class="container py-5 my-5">
+            <div class="row container">
                 <div class="col-12">
                     <h2 class="text-center mb-5"><ins>CONTACT US</ins></h2>
                 </div>
@@ -285,9 +320,9 @@
                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <input type="text" class="w-75 mt-1 mb-3 p-2" name="name" placeholder="Enter Your Name"><br>
-                    <input type="email" class="w-75 mb-3 p-2" name="email" placeholder="Enter Your Email"><br>
-                    <textarea type="textarea" class="w-75 mb-3 px-2 pb-4" name="meassage" placeholder="Type here your message"></textarea><br>
+                    <input type="text" class="w-100 mt-1 mb-3 p-2" name="name" placeholder="Enter Your Name"><br>
+                    <input type="email" class="w-100 mb-3 p-2" name="email" placeholder="Enter Your Email"><br>
+                    <textarea type="textarea" class="w-100 mb-3 px-2 pb-4" name="meassage" placeholder="Type here your message"></textarea><br>
                     <input type="button" class="bg-danger text-white  btn-outline-danger mb-3 p-2" value="sumbit">
                 </div>
             </div>
